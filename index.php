@@ -70,32 +70,33 @@
 
         <section id="respostas">
             <div class="box">
-                <h3>Respondendo as perguntas: </h3>
+                <h3>Respondendo às perguntas: </h3>
             </div>
 
         </section>
 
         <section id="contatos">
             <h1>Muito obrigada pela atenção!!</h1>
-            <h3>Links para contato:</h3>
             <div id="coluna">
                 <div id="contact_me">
                     <div style="text-align: center;">
                         <a href="linkedin.com/in/luisastellet" target="_blank">
                             <img src="fotos/linkedin.png" alt="Linkedin">
-                            <p>Se conecte comigo!</p>
+                            <p style="color: var(--azul); font-weight: bold;">Se conecte comigo!</p>
                         </a>
                     </div>
                     <div style="text-align: center;">
                         <a href="https://github.com/luisastellet" target="_blank">
                             <img src="fotos/github.png" alt="Github">
-                            <p>Veja meu portfólio!</p>
+                            <p style="color: var(--azul); font-weight: bold;">Veja meu portfólio!</p>
                         </a>
                     </div>
                 </div>
                 <form>
-                    <label for="option">Clique para listar meus repositórios de forma automatizada! </label>
-                    <input type="checkbox" id="option" name="option" onchange="mostrarConteudo(this.checked)">
+                    <div id="form">
+                        <label for="option">Clique para listar meus repositórios de forma automatizada! </label>
+                        <input type="checkbox" id="option" name="option" onchange="mostrarConteudo(this.checked)">
+                    </div>
 
                     <div id="conteudo" style="display:none;">
                         <?php

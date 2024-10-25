@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+CU:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 
 :root {
     --cor-neutra: #;
@@ -14,9 +16,11 @@
 * {
     margin: 0;
     top: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
-
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;    font-size: 30px;
 }
 
 #sobremim, #respostas {
@@ -24,7 +28,7 @@
 }
 
 #capa, .experiencias, #contatos {
-    background-color: #5b2ec67e;
+    background-color: #5b2ec65d;
 }
 
 section {
@@ -50,7 +54,7 @@ h1 {
 }
 
 h3 {
-    padding: 30px 0;
+    color: #4C7DDB;
 }
 
 img {
@@ -74,7 +78,8 @@ p {
 h3 {
     font-size: 50px;
     color: var(--roxo-azulado);
-    text-shadow: 2px 2px #474cc8ad;
+    font-weight: bold;
+    font-family: "Patua One", serif;
 }
 
 a {
@@ -84,15 +89,29 @@ a {
 
 a:hover {
     color: #8054e8;
-    font-weight: 500;
+    font-weight: bolder;
     text-decoration: underline;
+}
 
+li {
+    font-size: 20px;
+}
+
+label {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#form {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 #extra {
     border: 0px solid white;
 }
-
 
 #extra img {
     width: 350px;
@@ -104,11 +123,16 @@ a:hover {
     background-color: #e1b3e3;
     border-radius: 30px;
     border: 5px solid #de9ee1;
-    padding: 20px 30px;
+    padding: 10px 30px;
+    margin-top: 20px;
 }
 
 .experiencias .box {
     background-color: #e2c5e3d8;
+}
+
+#contatos {
+    padding-bottom: 0;
 }
 
 #contatos h3 {
@@ -118,7 +142,7 @@ a:hover {
 }
 
 #contatos h1{
-    font-size: 100px;
+    font-size: 85px;
 }
 
 #contatos img {
@@ -148,4 +172,38 @@ a:hover {
     flex-direction: column;
     gap: 20px;
     justify-content: center;
+}
+
+input[type="checkbox"] {
+    width: 25px; /* Largura do checkmark */
+    height: 25px; /* Altura do checkmark */
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1150px){
+    #contatos h1 {
+        font-size: 60px;
+    }
+
+    h1 {
+        font-size: 120px;
+    }
+
+    h3 {
+        font-size: 35px;
+    }
+
+    * {
+        font-size: 20px;
+    }
+
+    img {
+        width: 280px;
+        height: 280px;
+    }
+
+    li {
+        font-size: 15px;
+    }
 }

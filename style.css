@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+CU:wght@100..400&display=swap');
+
+:root {
+    --cor-neutra: #;
+    --lilas-neutro: #B8AADB;
+    --rosa-pink: #D560DB;
+    --lilas-rosado: #AD60DB;
+    --lilas-arroxeado: #8460DB;
+    --roxo-azulado: #6065DB;
+    --azul: #4C7DDB;
+}
+
+* {
+    margin: 0;
+    top: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+
+}
+
+#sobremim, #respostas {
+    background: linear-gradient(to bottom, var(--rosa-pink), var(--lilas-rosado), var(--lilas-arroxeado), var(--roxo-azulado), var(--azul));
+}
+
+#capa, .experiencias, #contatos {
+    background-color: #5b2ec67e;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 110vh;
+    box-sizing: border-box;
+    border: 2px solid var(--lilas-arroxeado);
+    padding: 10px 10px;
+}
+
+h1 {
+    background: linear-gradient(to left, var(--rosa-pink), var(--lilas-rosado), var(--lilas-arroxeado), var(--roxo-azulado), var(--azul));
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    font-size: 200px;
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 20px;
+}
+
+h3 {
+    padding: 30px 0;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+    margin: 0 20px;
+    margin-top: 40px;
+    border-radius: 30px;
+}
+
+figure {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 15px;
+    max-width: 85vw;
+}
+
+h3 {
+    font-size: 50px;
+    color: var(--roxo-azulado);
+    text-shadow: 2px 2px #474cc8ad;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #8054e8;
+    font-weight: 500;
+    text-decoration: underline;
+
+}
+
+#extra {
+    border: 0px solid white;
+}
+
+
+#extra img {
+    width: 350px;
+    height: 350px;
+    margin: 10px 80px;
+}
+
+.box {
+    background-color: #e1b3e3;
+    border-radius: 30px;
+    border: 5px solid #de9ee1;
+    padding: 20px 30px;
+}
+
+.experiencias .box {
+    background-color: #e2c5e3d8;
+}
+
+#contatos h3 {
+    color: black;
+    font-size: 40px;
+    text-shadow: none;
+}
+
+#contatos h1{
+    font-size: 100px;
+}
+
+#contatos img {
+    width: 120px;
+    height: 120px;
+}
+
+#contatos figure {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+}
+
+#contact_me {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+#contact_me div {
+    margin: 0px 20px;
+}
+
+#coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}

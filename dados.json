@@ -1,5 +1,13 @@
 [
     {
+        "nome": "Projeto login",
+        "link": "https://github.com/luisastellet/Projeto-login"
+    },
+    {
+        "nome": "OnePage",
+        "link": "https://github.com/luisastellet/OnePage"
+    },
+    {
         "nome": "Oficina Setel 2024",
         "link": "https://github.com/luisastellet/Oficina_Setel_2024"
     },
@@ -80,10 +88,6 @@
         "link": "https://github.com/luisastellet/Html-Css"
     },
     {
-        "nome": "Projeto login",
-        "link": "https://github.com/luisastellet/Projeto-login"
-    },
-    {
         "nome": "Projeto website moderno",
         "link": "https://github.com/luisastellet/Projeto-website-moderno"
     },
@@ -114,9 +118,5 @@
     {
         "nome": "Exercicio 02 CSS",
         "link": "https://github.com/luisastellet/Exercicio-02-CSS"
-    },
-    {
-        "nome": "Curso html Basico",
-        "link": "https://github.com/luisastellet/Curso-html-Basico"
     }
 ]

@@ -2,7 +2,6 @@ import json
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-
 driver = webdriver.Chrome()
 
 driver.get("https://github.com/luisastellet?tab=repositories")
@@ -21,6 +20,7 @@ with open('dados.json', 'w', encoding='utf-8') as f:
             "link": lista_links[i]
         })
     json.dump(objetos, f, ensure_ascii=False, indent=4)
+    f.flush()
 
 print('Lista de repositórios:')
 print(lista_repositorios)

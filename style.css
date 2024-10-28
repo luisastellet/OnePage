@@ -50,7 +50,7 @@ section {
 }
 
 h1 {
-    font-size: 200px;
+    font-size: 125px;
     font-family: "Patua One", serif;
     font-weight: 400;
     font-style: normal;
@@ -230,7 +230,7 @@ input[type="checkbox"] {
     }
 
     h1 {
-        font-size: 120px;
+        font-size: 93px;
     }
 
     h3 {
@@ -257,30 +257,6 @@ input[type="checkbox"] {
 }
 
 @media screen and (max-width: 1009px){
-
-    /* #contatos h1 {
-        font-size: 55px;
-    }
-
-    p {
-        font-size: 15px;
-    }
-
-    
-
-    .texto-maior {
-        font-size: 20px;
-    }
-
-    h1 {
-        font-size: 100px;
-    }
-
-    
-
-    
-
-     */
 
     .texto-maior {
         font-size: 20px;
@@ -340,7 +316,7 @@ input[type="checkbox"] {
     }
 
     h1 {
-        font-size: 100px;
+        font-size: 66px;
     }
 
     h3 {

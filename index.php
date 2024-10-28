@@ -24,7 +24,7 @@
 
     <main>
         <section id="capa">
-            <h1>Luisa Stellet</h1>
+            <h1>Luisa Muniz Stellet</h1>
             <h3 id="atencao">Graduanda em Ciência da Computação</h3>
             <p class="texto-maior" id="estagio">Programa Estagiar Globo 2024</p>
         </section> 
@@ -54,7 +54,7 @@
             </figure>
         </section>
 
-        <section class="experiencias">
+        <!-- <section class="experiencias">
             <h3>Experiências que trouxeram aprendizados sobre conviver com a diferença :</h3>
             <div class="box">
                 <p>Em setembro deste ano, fiz minha primeira viagem sozinha para um congresso, onde apresentei um artigo que foi escrito com base no projeto de web que desenvolvi enquanto era bolsista do grupo PET-Tele da UFF.</p>
@@ -65,10 +65,10 @@
                 <img src="fotos/5.jpg" alt="COBENGE 2024">
                 
             </figure>
-        </section>
+        </section> -->
 
         <section id="respostas">
-            <h3>Respondendo às perguntas: </h3>
+            <h3>Respondendo às perguntas :</h3>
             <div class="div-respostas">
                 <div class="box">
                     <h5>Como você acredita que participar do Programa terá um papel importante na sua história profissional?</h5>

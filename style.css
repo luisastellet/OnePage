@@ -20,15 +20,21 @@
     font-weight: 400;
     font-style: normal;
     font-variation-settings:
-      "wdth" 100;    font-size: 30px;
+      "wdth" 100;    font-size: 20px;
 }
 
-#sobremim, #respostas {
-    background: linear-gradient(to bottom, var(--rosa-pink), var(--lilas-rosado), var(--lilas-arroxeado), var(--roxo-azulado), var(--azul));
+#respostas, #capa, #contatos {
+    background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
 }
 
-#capa, .experiencias, #contatos {
-    background-color: #5b2ec65d;
+.experiencias, #sobremim {
+    background-color: #a18cd1d2;
+}
+
+main {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
 
 section {
@@ -36,30 +42,26 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 110vh;
+    min-height: 100vh;
     box-sizing: border-box;
     border: 2px solid var(--lilas-arroxeado);
     padding: 10px 10px;
+    scroll-snap-align: start;
 }
 
 h1 {
-    background: linear-gradient(to left, var(--rosa-pink), var(--lilas-rosado), var(--lilas-arroxeado), var(--roxo-azulado), var(--azul));
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; 
     font-size: 200px;
     font-family: "Patua One", serif;
     font-weight: 400;
     font-style: normal;
     padding-bottom: 20px;
-}
-
-h3 {
-    color: #4C7DDB;
+    color: var(--lilas-arroxeado);
+    text-shadow: 6px 5px 2px var(--roxo-azulado);
 }
 
 img {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     margin: 0 20px;
     margin-top: 40px;
     border-radius: 30px;
@@ -71,12 +73,12 @@ figure {
 
 p {
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 7px;
     max-width: 85vw;
 }
 
 h3 {
-    font-size: 50px;
+    font-size: 36px;
     color: var(--roxo-azulado);
     font-weight: bold;
     font-family: "Patua One", serif;
@@ -88,19 +90,33 @@ a {
 }
 
 a:hover {
-    color: #8054e8;
+    color: var(--roxo-azulado);
     font-weight: bolder;
     text-decoration: underline;
 }
 
 li {
-    font-size: 20px;
+    font-size: 19px;
 }
 
 label {
     text-align: center;
     margin-bottom: 30px;
 }
+
+hr {
+    margin: 12px;
+    border: 0;
+    height: 2px;
+    background: var(--lilas-arroxeado);
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--roxo-azulado);
+}
+
 
 #form {
     display: flex;
@@ -109,40 +125,40 @@ label {
     margin-bottom: 20px;
 }
 
-#extra {
-    border: 0px solid white;
-}
-
-#extra img {
-    width: 350px;
-    height: 350px;
-    margin: 10px 80px;
-}
 
 .box {
-    background-color: #e1b3e3;
+    background-color: #e2c5e3d8;
     border-radius: 30px;
-    border: 5px solid #de9ee1;
+    border: 4px solid var(--lilas-arroxeado);
     padding: 10px 30px;
     margin-top: 20px;
 }
 
-.experiencias .box {
-    background-color: #e2c5e3d8;
+#respostas .box {
+    background-color: #efdcef;
 }
+
+#respostas {
+    padding: 0px 50px;
+}
+
+.texto-maior {
+    font-size: 25px;
+}
+
 
 #contatos {
     padding-bottom: 0;
 }
 
 #contatos h3 {
-    color: black;
+    color: var(--lilas-arroxeado);
     font-size: 40px;
-    text-shadow: none;
 }
 
 #contatos h1{
     font-size: 85px;
+    text-shadow: 4px 2px 2px var(--roxo-azulado);
 }
 
 #contatos img {
@@ -174,14 +190,41 @@ label {
     justify-content: center;
 }
 
+.div-respostas {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 50px;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.div-respostas div {
+    width: 50%;
+}
+
+.div-respostas .box p {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+#respostas h3 {
+    margin-bottom: 15px;
+}
+
+#estagio {
+    padding-top: 20px;
+}
+
 input[type="checkbox"] {
-    width: 25px; /* Largura do checkmark */
-    height: 25px; /* Altura do checkmark */
+    width: 25px; 
+    height: 25px;
     margin-left: 10px;
     margin-bottom: 30px;
 }
 
 @media screen and (max-width: 1150px){
+
     #contatos h1 {
         font-size: 60px;
     }
@@ -191,11 +234,11 @@ input[type="checkbox"] {
     }
 
     h3 {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     * {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     img {
@@ -204,6 +247,111 @@ input[type="checkbox"] {
     }
 
     li {
+        font-size: 15px;
+    }
+
+    input[type="checkbox"] {
+        width: 20px; 
+        height: 20px; 
+    }
+}
+
+@media screen and (max-width: 1009px){
+
+    /* #contatos h1 {
+        font-size: 55px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    
+
+    .texto-maior {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 100px;
+    }
+
+    
+
+    
+
+     */
+
+    .texto-maior {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 21px; 
+    }
+
+    img {
+        width: 220px;
+        height: 220px;
+    }
+
+    h5 {
+        font-size: 17px;
+    }
+
+    * {
+        font-size: 14px;
+    }
+
+    #respostas h3 {
+        font-size: 26px;
+    }
+
+    #contatos h1 {
+        font-size: 55px;
+    }
+
+    #atencao {
+        font-size: 26px;
+    }
+
+    li {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 815px){
+
+    #contatos h1 {
+        font-size: 39px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    img {
+        width: 186px;
+        height: 186px;
+    }
+
+    .texto-maior {
+        font-size: 19px;
+    }
+
+    h1 {
+        font-size: 100px;
+    }
+
+    h3 {
+       font-size: 19px; 
+    }
+
+    #respostas h3 {
+        font-size: 25px;
+    }
+
+    h5 {
         font-size: 15px;
     }
 }
